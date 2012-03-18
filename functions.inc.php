@@ -1,5 +1,5 @@
 <?php
-class EtherpadLiteClient {
+class pad {
 
   const API_VERSION             = 1;
 
