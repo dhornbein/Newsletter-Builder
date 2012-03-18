@@ -1,6 +1,10 @@
 <?php
 
+include('functions.inc.php');
+
 define('TITLE', 'OWS Newsletter Draft');
+
+$api = include('api');
 
 $newWeek = 'Tue';
 
@@ -27,9 +31,9 @@ if(date('D',strtotime("-1 week")) == $newWeek )
   $pad = $baseURL . $basePadName . '?' . http_build_query($arguments);
 
   $display = "<iframe id='mainPad' src='$pad'>";
+
 ?>
 
-<!DOCTYPE>
 <html>
 <head>
   <title><?php echo TITLE; ?></title>
